@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'cliente',
     'tecnico',
+    'app',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -83,3 +84,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+MEDIA_ROOT = BASE_DIR + '/media/'
+TEMPLATE_DIRS = ( BASE_DIR,)
