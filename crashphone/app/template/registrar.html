@@ -1,6 +1,17 @@
-<form method="POST" action="" enctype="multipart/form-data">
+{% extends "app/template/base.html" %}
+{% load staticfiles %}
+
+	    {% block css %}
+	<link rel="stylesheet" type="text/css" href="{% static "solicita.css" %}" media="all" />
+    {% endblock %}
+{% block content %}
+    <form method="post" action="" enctype="multipart/form-data">
+    <Br><br>
+
     {% csrf_token %}
     {{userform.as_p}}
     {{userprofileform.as_p}}
     <input type="submit">
 </form>
+
+{% endblock %}

@@ -1,0 +1,116 @@
+{% extends "app/template/base.html" %}
+{% load staticfiles %}
+
+	    {% block css %}
+	<link rel="stylesheet" type="text/css" href="{% static "solicita.css" %}" media="all" />
+    {% endblock %}
+{% block content %}
+<div class="clearFloat"></div>
+    <div class="Titulo">
+      
+        <p class="lastNode">Solicita servicio
+      </p>
+    </div>
+    <div class="clearFloat"></div>
+    <div id="separadorHeader">
+    </div>
+    <div>
+		<form method="POST" action="/tecnico/" enctype="multipart/form-data">
+    {% csrf_token %}
+		<center>
+		<br>
+		<br>
+		<TABLE BORDER=0 WIDTH=50%>
+<TR>
+<TD >
+Marca: 
+</TD>
+
+<TD>
+<select  name="Marca">
+  <option value="Samsung">Samsung</option>
+  <option value="Iphone">Iphone</option>
+  <option value="Nokia">Nokia</option>
+  <option value="Sony">Sony</option>
+  <option value="Blackberry">Blackberry</option>
+  <option value="Huawei">Huawei</option>
+</select>
+</TD>
+</TR>
+<TR>
+<TD >
+Modelo: 
+</TD>
+
+<TD>
+<input type="text" name="Modelo">
+</TD>
+</TR>
+<TR>
+<TD >
+Daño: 
+</TD>
+
+<TD>
+<select  name="dano">
+  <option value="Pantalla">Pantalla</option>
+  <option value="Tactil">Tactil</option>
+  <option value="Pin">Pin de Carga</option>
+  <option value="Bateria">Bateria</option>
+  <option value="Camara">Camara</option>
+    <option value="Sotfware">Sotfware</option>
+
+  <option value="Otro">Otro</option>
+
+</select>
+</TD>
+</TR>
+<TR>
+<TD >
+Descripción: 
+</TD>
+
+<TD>
+<input type="text" name="descripcion">
+</TD>
+</TR>
+<TR>
+<TD >
+Fecha: 
+</TD>
+
+<TD>
+<input type="text" name="Fecha">
+</TD>
+</TR>
+<TR>
+<TD >
+Hora:
+</TD>
+
+<TD>
+<input type="text" name="Hora">
+</TD>
+</TR>
+<TR>
+<TD >
+Dirección: 
+</TD>
+
+<TD>
+<input type="text" name="Direccion">
+</TD>
+</TR>
+</TABLE>
+<br>
+<input type="submit" value="Siguiente">
+
+<br>
+<br>
+<div id="map-canvas" style="float:center;width:60%; height:350px"></div>
+
+</div>
+
+</center>
+</from>
+{% endblock %}
