@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 body {
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	background-color: #f5f5f4;
 	font-size: 18px;
 	margin: 0;
@@ -9,6 +10,11 @@ body {
 .helptext
 {
 display: none;
+}
+a {
+	    color: #C0C0C0;
+
+    text-decoration: none;
 }
 body * {
 	font-size: 100%;
@@ -122,7 +128,7 @@ html > body #userInfo {
 	line-height: 168.75%;
 	padding-bottom: 2px;
 	padding-top: 1px;
-	margin-right: 99px;
+	margin-right: 60px;
 	margin-top: 46px;
 	display: inline;
 	float: right;
@@ -136,7 +142,7 @@ html > body #userInfo {
 	line-height: 168.75%;
 	padding-bottom: 2px;
 	padding-top: 1px;
-	margin-right: 159px;
+	margin-right: 60px;
 	margin-top: 46px;
 	display: inline;
 	float: right;

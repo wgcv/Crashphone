@@ -3,6 +3,11 @@
 
 	    {% block css %}
 	<link rel="stylesheet" type="text/css" href="{% static "solicita.css" %}" media="all" />
+   <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDVuND2HGk8qudUg74rqyRyOLEzFu-GrG8&sensor=falsee&region=EC">
+    </script>
+     <script type="text/javascript"   src="{% static "script.js" %}">
+</script>
     {% endblock %}
 {% block content %}
 <div class="clearFloat"></div>
@@ -107,10 +112,10 @@ Dirección:
 
 <br>
 <br>
-<div id="map-canvas" style="float:center;width:60%; height:350px"></div>
+<div id="map-canvas" style="float:center;width:60%; height:300px"></div>
 
 </div>
-
-</center>
-</from>
+<br><br><br>
+<br><br><br>
+</center></form></div>
 {% endblock %}

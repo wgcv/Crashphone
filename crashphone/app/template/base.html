@@ -6,18 +6,14 @@
     <meta charset="utf-8">
 	<title>Crashphone</title>
 
-
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Robot">
 	<link rel="stylesheet" type="text/css" href="{% static "solicita.css" %}" media="all" />
 	    {% block css %}
     {% endblock %}
 	<!--[if IE]>
 	<style type="text/css" media="all">.borderitem {border-style: solid;}</style>
 	<![endif]-->
- <script type="text/javascript"
-      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDVuND2HGk8qudUg74rqyRyOLEzFu-GrG8&sensor=falsee&region=EC">
-    </script>
-     <script type="text/javascript"   src="{% static "script.js" %}">
-</script>
+
 </head>
 
 <body>
@@ -34,23 +30,30 @@
 {% endif %}
 
 		</div>
+			<div class="Txt_Registro">
+			<a href="{% url 'capacitate' %}">
+				<p class="lastNode">Capacítate
+			</p></a>
+		</div>
 		<div class="Txt_Solicitar">
 			<a href="{% url 'solicitar' %}">
 				<p class="lastNode">Solicitar
 			</p></a>
 		</div>
+		
 		<div class="Txt_Registro">
 			<a href="{% url 'registro' %}">
 				<p class="lastNode">Registro
 			</p></a>
 		</div>
+
 		<div class="Txt_Home">
 					<a href="{% url 'home' %}">
-				<p class="lastNode">Home
+				<p class="lastNode">Inicio
 			</p></a>
 		</div>
-		<div id="Div2">
-		</div>
+
+		
 	</div>
 	<div class="clearFloat"></div>
 	<div id="Div3">

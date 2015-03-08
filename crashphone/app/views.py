@@ -11,10 +11,9 @@ from django.template.context import RequestContext
 # Create your views here.
 
 def home(request):
-    now = 32
-    html = "<html><body>It is now %s.</body></html>" % now
-    return HttpResponse(html)
-
+    return render(request, 'app/template/base.html' )
+def capacitate(request):
+    return render(request, 'app/template/base.html' )
 def registro(request):
 	if request.method == 'POST':
 		uf = Registrar(request.POST)

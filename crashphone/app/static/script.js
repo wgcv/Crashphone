@@ -71,8 +71,12 @@ function mostrarError(error){
   origen = new google.maps.LatLng(latitud, longitud);
   var marker = new google.maps.Marker({
       position: origen,
+      draggable:true,
+    animation: google.maps.Animation.DROP,
       map: map
     });
+    google.maps.event.addListener(marker, 'click', toggleBounce);
+
 map.setCenter(origen);
 map.setZoom(16);
 //calcRoute();
