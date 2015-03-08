@@ -88,7 +88,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
     )
 MEDIA_ROOT = BASE_DIR + '/media/'
-TEMPLATE_DIRS = ( BASE_DIR,)
+TEMPLATE_DIRS = ( os.path.join(SETTINGS_PATH, 'templates'), BASE_DIR,)
 # Redirect when login is not correct.
 STATIC_ROOT= os.path.join(BASE_DIR,'static_media/')
 
