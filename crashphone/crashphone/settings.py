@@ -90,5 +90,7 @@ STATICFILES_FINDERS = (
 MEDIA_ROOT = BASE_DIR + '/media/'
 TEMPLATE_DIRS = ( BASE_DIR,)
 # Redirect when login is not correct.
+STATIC_ROOT= os.path.join(BASE_DIR,'static_media/')
+
 LOGIN_URL = '/ingresar'
 LOGIN_REDIRECT_URL = "/"
