@@ -14,6 +14,4 @@ urlpatterns = (
 	url(r'^tecnico/', 'app.views.tecnico', name='tecnico'),
 	url(r'^asignado/', 'app.views.asignado', name='asignado'),
  	url(r'^salir/', logout, {'template_name': 'app/template/base.html', }, name="salir"),
-
-
     )
