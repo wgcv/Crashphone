@@ -28,7 +28,7 @@ class Registrar(UserCreationForm):
 			fields = ('username','first_name','last_name','email')
 
 class UserProfileForm(forms.ModelForm):
-	foto = forms.FileField(required=False)
+#	foto = models.FileField(blank=True, null=True)
 	class Meta:
 		model = Cliente
-		fields = ('celular','foto')
+		fields = ('celular',)
