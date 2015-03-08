@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app.forms import *
+from .forms import Registrar,UserProfileForm
 from cliente.models import *
 from tecnico.models import *
 
